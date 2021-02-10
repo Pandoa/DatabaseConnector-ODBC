@@ -11,3 +11,5 @@
 - Blueprints & C++ support
 - Parameters escaping
 - Wide database support
+
+!> Get started by reading the [setup guide](/setup).
