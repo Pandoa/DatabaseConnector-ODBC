@@ -7,7 +7,10 @@ This section contains several code examples to get you started using this plugin
 
 ### Creating a Pool
 
+
 ```cpp
+#include "Database/Pool.h" // For UDatabasePool class.
+
 void UMyClass::CreateMyPool()
 {
     UDatabasePool::CreatePool
@@ -18,7 +21,7 @@ void UMyClass::CreateMyPool()
         TEXT("127.0.0.1"),               // Database Server
         3306,                            // Database Port
         TEXT("my_database"),             // Database Name
-        5,                               // Port
+        5,                               // Pool Size
 
         // Callback called when the pool has been created.
         FDatabasePoolCallback::CreateLambda([](EDatabaseError Error, UDatabasePool* Pool) -> void
