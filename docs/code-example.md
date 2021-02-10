@@ -2,6 +2,7 @@
 This section contains several code examples to get you started using this plugin.
 
 ## Blueprints
+!> Examples comming soon.
 
 ## C++
 
