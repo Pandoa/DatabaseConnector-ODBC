@@ -1,5 +1,5 @@
 # Code Example
-This section contains several code examples to get you started using this plugin.
+This section contains several code examples to get you started using `Database - Connector (ODBC)`.
 
 ## Blueprints
 !> Examples comming soon.
