@@ -1,6 +1,6 @@
 - Pages
 
-  - [Introduction](quickstart.md)
-  - [Setup](more-pages.md)
-  - [Troubleshoting](custom-navbar.md)
-  - [Support](cover.md)
+  - [Setup](setup.md)
+  - [Code Example](code-example.md)
+  - [Troubleshoting](troubleshoting.md)
+  - [Support](support.md)
