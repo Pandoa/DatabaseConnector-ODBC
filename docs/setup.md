@@ -24,10 +24,10 @@ Now that the driver is installed on your machine, you need to get the exact driv
 To do so:
 1. Use the `WIN + R` shortcut to open the `Run` window.
 2. Enter `odbcad32.exe` to open the `ODBC Data Source Administrator (64-bit)` window.  
-![64-bit ODBC admin window](_media/run.png) 
+![64-bit ODBC admin window](_images/run.png) 
 
 3. Under the `Drivers` section, identify the driver you installed and note somewhere the exact name of your driver (version number included).  
-![driver name](_media/driver.png)
+![driver name](_images/driver.png)
 
 ?> In the example, the name to remember is `MariaDB ODBC 3.1 Driver`.
 
