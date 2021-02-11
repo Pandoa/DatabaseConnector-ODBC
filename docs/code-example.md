@@ -13,7 +13,7 @@ The parameters are the following:
 4. **ServerAddress**: The address where your database is accessible.
 5. **ServerPort**: The port where your database is accessible.
 6. **DatabaseName**: The name of the database to connect to.
-7. **PoolSize**: The size of the pool. It represents the number of simultaneous connections your application will be able to maintain in parallel.
+7. **PoolSize**: The size of the pool. It represents the number of simultaneous connections your application will be able to maintain and use in parallel.
 
 ![Create Database Blueprint Example](_media/CreatePool.png)
 
