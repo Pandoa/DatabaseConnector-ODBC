@@ -15,7 +15,7 @@ The parameters are the following:
 6. **DatabaseName**: The name of the database to connect to.
 7. **PoolSize**: The size of the pool. It represents the number of simultaneous connections your application will be able to maintain in parallel.
 
-![Create Database Blueprint Example](_media/CreatePool.png)
+![Create Database Blueprint Example](_images/CreatePool.png)
 
 ## Query your Database
 To query the Database, use the `Query` node of your pool.
@@ -23,8 +23,8 @@ This method requires three parameters:
 1. **Query**: The SQL query to execute. Use `?` to reference a parameter.
 2. **Parameters**: The parameters for our query. Inserted following the order of the `?` in the query.
 
-![Query Database Blueprint Example](_media/Query.png)
----
+![Query Database Blueprint Example](_images/Query.png)
+
 
 # C++
 ## Creating a Pool
