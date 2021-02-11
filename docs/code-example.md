@@ -80,3 +80,43 @@ void UMyClass::InsertNewUser()
 	);
 }
 ```
+
+## Parsing Results
+Once you querried your database, you can get your data. To do so, several methods are available.
+
+The following code example shows the methods you can use to get your data:
+```cpp
+// Get a single value in a row and column.
+const int32   UserId   = Result.Get(0 /* ColumnIndex */, 0 /* RowIndex */);
+const FString UserName = Result.Get(TEXT("username"),    0 /* RowIndex */);
+
+// Iterate over column names.
+for (const FString& ColumnName : Result.GetColumns())
+{
+	// ColumnName is the name of the columns in order.
+}
+
+// Prints an ASCII table with the content in the Output Log. 
+// Useful for debugging.
+Result.LogDump();
+
+// Number of columns of this result.
+const int32 ColumnCount = Result.GetColumnCount();
+
+{ // Gets a whole row.
+	const TArray<FDatabaseValue>* Row = Result.GetRow(1 /* RowIndex */);
+
+	if (Row)
+	{
+		const int32   OtherUserId = (*Row)[0];
+		const FString OtherUserName = (*Row)[1];
+	}
+}
+
+// The number of rows of this result.
+const int64 RowCount = Result.GetRowCount();
+```
+
+?> The `FQueryResult` struct is cheap to copy, it references internally a shared data set. 
+
+?> The `FQueryResult` struct is thread-safe; you can safely copy it across threads.
