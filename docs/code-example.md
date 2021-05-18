@@ -25,6 +25,14 @@ This method requires three parameters:
 
 ![Query Database Blueprint Example](_media/Query.png)
 
+##Parsing Results
+Once you querried your database, you can get your data. To do so, several methods are available.
+
+![QueryResult methods](https://github.com/Pandoa/DatabaseConnector-ODBC/blob/main/docs/_images/QueryResult.png?raw=true)
+
+?> The `FQueryResult` struct is cheap to copy, it references internally a shared data set. 
+
+?> The `FQueryResult` struct is thread-safe; you can safely copy it across threads.
 
 # C++
 ## Creating a Pool
