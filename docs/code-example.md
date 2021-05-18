@@ -25,7 +25,7 @@ This method requires three parameters:
 
 ![Query Database Blueprint Example](_media/Query.png)  
 
-##Parsing Results
+## Parsing Results
 
 Once you querried your database, you can get your data. To do so, several methods are available.
 
