@@ -23,9 +23,10 @@ This method requires three parameters:
 1. **Query**: The SQL query to execute. Use `?` to reference a parameter.
 2. **Parameters**: The parameters for our query. Inserted following the order of the `?` in the query.  
 
-![Query Database Blueprint Example](_media/Query.png)
+![Query Database Blueprint Example](_media/Query.png)  
 
 ##Parsing Results
+
 Once you querried your database, you can get your data. To do so, several methods are available.
 
 ![QueryResult methods](https://github.com/Pandoa/DatabaseConnector-ODBC/blob/main/docs/_images/QueryResult.png?raw=true)
