@@ -173,17 +173,33 @@ This example is meant to help understand how to use the plugin in an actual use 
 #include "CoreMinimal.h"
 #include "MyClass.generated.h"
 
+// Forward declaration of the pool class.
+class UDatabasePool;
+
 UCLASS()
 class MYGAME_API UMyClass : public UObject
 {
   GENERATED_BODY()
 public:
+  // Connects to the database.
   void ConnectToDatabase();
   
-private:
-  void OnPoolCreated();
+  // We have a connection if the pool is not null.
+  // This is pretty basic as it doesn't check the actual connection status.
+  inline bool IsConnected() const 
+  {
+    return Pool != nullptr;
+  }
   
 private:
+  // Callback called when the pool is created.
+  void OnPoolCreated(EDatabaseError Error, UDatabasePool* NewPool);
+  
+  // Called after our query.
+  void OnUserQueried(EDatabaseError Error, const FQueryResult& Results);
+  
+private:
+  // Our pool ketp as UPROPERTY() to prevent garbage collection.
   UPROPERTY()
   UDatabasePool* Pool;
 };
@@ -192,5 +208,51 @@ private:
 
 ```cpp
 // Copyright notice
+
+#include "MyClass.h"
+#include "Database/Pool.h"
+
+
+// Connects to the database.
+void UMyClass::ConnectToDatabase()
+{
+  UDatabasePool::CreatePool
+  (
+    TEXT("My Driver 4.2.0"),
+    TEXT("MyUsername"),
+    TEXT("MyPassword"),
+    TEXT("my.server.com"),
+    484 /* database port */,
+    TEXT("MyDatabase"),
+    10 /* Pool size */,
+    
+    // We want to call our member method when the pool is created.
+    FDatabasePoolCallback::CreateUObject(this, &ThisClass::OnPoolCreated)
+  );  
+}
+
+// Callback called when the pool is created.
+void UMyClass::OnPoolCreated(EDatabaseError Error, UDatabasePool* NewPool)
+{
+  if (Error == EDatabaseError::None)
+  {
+    // We are connected with a valid pool.
+    Pool = NewPool;
+    
+    // We can now query our database.
+    Pool->Query(TEXT("SELECT * FROM tb_users WHERE user = ?"), { 1 }, FDatabaseQueryCallback::CreateUObject(this, &ThisClass::OnUserQueried));
+  }
+  else
+  {
+    // An error occured.
+  }
+}
+
+// Called after our query.
+void UMyClass::OnUserQueried(EDatabaseError Error, const FQueryResult& Results)
+{
+  // We can parse Results to get our user.
+}
+
 ```
 
