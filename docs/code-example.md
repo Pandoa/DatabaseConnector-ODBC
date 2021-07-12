@@ -163,3 +163,34 @@ const int64 RowCount = Result.GetRowCount();
 ?> The `FQueryResult` struct is cheap to copy, it references internally a shared data set. 
 
 ?> The `FQueryResult` struct is thread-safe; you can safely copy it across threads.
+
+## Complete C++ Example
+This example is meant to help understand how to use the plugin in an actual use case.
+###### Header file `MyClass.h`.
+```cpp
+// Copyright notice
+
+#include "CoreMinimal.h"
+#include "MyClass.generated.h"
+
+UCLASS()
+class MYGAME_API UMyClass : public UObject
+{
+  GENERATED_BODY()
+public:
+  void ConnectToDatabase();
+  
+private:
+  void OnPoolCreated();
+  
+private:
+  UPROPERTY()
+  UDatabasePool* Pool;
+};
+```
+###### Source file `MyClass.cpp`.
+
+```cpp
+// Copyright notice
+```
+
