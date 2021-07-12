@@ -199,7 +199,7 @@ private:
   void OnUserQueried(EDatabaseError Error, const FQueryResult& Results);
   
 private:
-  // Our pool ketp as UPROPERTY() to prevent garbage collection.
+  // Our pool kept as UPROPERTY() to prevent garbage collection.
   UPROPERTY()
   UDatabasePool* Pool;
 };
