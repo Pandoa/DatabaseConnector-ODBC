@@ -34,3 +34,16 @@ To do so:
 4. You now have to use this name when connecting to your Database using Blueprints and/or C++.
 
 !> If the driver corresponding to your database doesn't show up, it probably means that the 64-bits version isn't installed on your machine.
+
+## C++ Setup
+An additional step is required for C++:
+1. Open your module's `Module.Build.cs`.
+2. Add the following line in the constructor:
+```csharp
+PublicDependencyModuleNames.Add("DatabaseConnector");
+```
+3. Save the file.
+4. Right click on your `Project.uproject`.
+5. Select `Generate <IDE> Project Files`.
+
+The plugin is now ready to be used with C++.
