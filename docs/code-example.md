@@ -15,7 +15,11 @@ The parameters are the following:
 6. **DatabaseName**: The name of the database to connect to.
 7. **PoolSize**: The size of the pool. It represents the number of simultaneous connections your application will be able to maintain and use in parallel.
 
+<div class="centered">
+
 ![Create Database Blueprint Example](_media/CreatePool.png)
+
+</div>
 
 ## Query your Database
 To query the Database, use the `Query` node of your pool.
@@ -23,13 +27,21 @@ This method requires three parameters:
 1. **Query**: The SQL query to execute. Use `?` to reference a parameter.
 2. **Parameters**: The parameters for our query. Inserted following the order of the `?` in the query.  
 
+<div class="centered">
+
 ![Query Database Blueprint Example](_media/Query.png)  
+
+</div>
 
 ## Parsing Results
 
 Once you querried your database, you can get your data. To do so, several methods are available.
 
+<div class="centered">
+
 ![QueryResult methods](https://github.com/Pandoa/DatabaseConnector-ODBC/blob/main/docs/_images/QueryResult.png?raw=true)
+
+</div>
 
 ?> The `FQueryResult` struct is cheap to copy, it references internally a shared data set. 
 
