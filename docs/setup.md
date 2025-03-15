@@ -1,6 +1,8 @@
 # Setup
 This page will guide you on how to setup `Database - Connector (ODBC)` to connect to your database.
 
+---
+
 ## Installing the ODBC driver
 To connect to your database, `Database - Connector (ODBC)` uses an ODBC driver specific to your Database.
 That's why you must first install the driver corresponding to your database.
@@ -45,8 +47,10 @@ To do so:
 
 !> If the driver corresponding to your database doesn't show up, it probably means that the 64-bits version isn't installed on your machine.
 
+---
+
 ## C++ Setup
-An additional step is required for C++:
+An additional step is required for C++, you can skip it if you use only Blueprints:
 1. Open your module's `Module.Build.cs`.
 2. Add the following line in the constructor:
 ```csharp

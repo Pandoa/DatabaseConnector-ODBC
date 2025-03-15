@@ -1,6 +1,8 @@
 # Code Example
 This section contains several code examples to get you started using `Database - Connector (ODBC)`.
 
+--- 
+
 # Blueprints
 ## Creating a Pool
 A pool is a list of connected clients to a database. It allows to have and use multiple connections without having to manage 
@@ -46,6 +48,8 @@ Once you querried your database, you can get your data. To do so, several method
 ?> The `FQueryResult` struct is cheap to copy, it references internally a shared data set. 
 
 ?> The `FQueryResult` struct is thread-safe; you can safely copy it across threads.
+
+---
 
 # C++
 ## Creating a Pool
