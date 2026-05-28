@@ -14,7 +14,7 @@
 
 <div class="centered">
 
-![Feature list of the plugin](_images/Frame.png)
+<img src=" ./_images/Frame.png" alt="Plugin feature list"/>
 
 </div>
 

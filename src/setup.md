@@ -36,7 +36,7 @@ To do so:
 
 <div class="centered">
 
-![64-bit ODBC admin window](_media/run.png) 
+<img src=" ./_media/run.png" alt="64-bit ODBC admin window"/>
 
 </div>
 
@@ -44,7 +44,7 @@ To do so:
 
 <div class="centered">
 
-![driver name](_media/driver.png)
+<img src=" ./_media/driver.png" alt="Driver names"/>
 
 </div>
 

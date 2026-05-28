@@ -19,7 +19,7 @@ The parameters are the following:
 
 <div class="centered">
 
-![Create Database Blueprint Example](_media/CreatePool.png)
+<img src=" ./_media/CreatePool.png" alt="Create Database Blueprint Example"/>
 
 </div>
 
@@ -31,7 +31,7 @@ This method requires three parameters:
 
 <div class="centered">
 
-![Query Database Blueprint Example](_media/Query.png)  
+<img src=" ./_media/Query.png" alt="Query Database Blueprint Example"/>
 
 </div>
 
@@ -41,7 +41,7 @@ Once you querried your database, you can get your data. To do so, several method
 
 <div class="centered">
 
-![QueryResult methods](https://github.com/Pandoa/DatabaseConnector-ODBC/blob/main/docs/_images/QueryResult.png?raw=true)
+<img src=" ./_images/QueryResult.png" alt="QueryResult methods"/>
 
 </div>
 
