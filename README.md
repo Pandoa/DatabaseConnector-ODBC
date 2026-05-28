@@ -129,3 +129,15 @@ This project exists thanks to all the people who contribute. [[Contribute](CONTR
 _Vercel_ has given us a Pro account.
 
 <a href="https://vercel.com/?utm_source=docsifyjsdocs" target="_blank"><img src="docs/_media/vercel_logo.svg" width="100px"></a>
+
+
+
+<!--backlinks-->
+
+#### Navigate the documentation
+
+ - [https://pandoa.github.io/DatabaseConnector-ODBCcode-example](https://pandoa.github.io/DatabaseConnector-ODBCcode-example),
+ - [https://pandoa.github.io/DatabaseConnector-ODBCindex](https://pandoa.github.io/DatabaseConnector-ODBCindex),
+ - [https://pandoa.github.io/DatabaseConnector-ODBCsetup](https://pandoa.github.io/DatabaseConnector-ODBCsetup),
+ - [https://pandoa.github.io/DatabaseConnector-ODBCsupport](https://pandoa.github.io/DatabaseConnector-ODBCsupport),
+ - [https://pandoa.github.io/DatabaseConnector-ODBCtroubleshooting](https://pandoa.github.io/DatabaseConnector-ODBCtroubleshooting)

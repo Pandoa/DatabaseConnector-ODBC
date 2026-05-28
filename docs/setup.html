@@ -1,11 +1,11 @@
 <!DOCTYPE html><html lang="en" style="background-color:#101010;"><head>
 	<meta charset="UTF-8">
 	<link rel="icon" href="https://pandoa.github.io/DatabaseConnector-ODBC/_media/favicon.ico">
-	<title>How to connect to a datase in Unreal Engine</title>
-	<script type="application/ld+json">{"@context":"https://schema.org/","@type":"TechArticle","headline":"How to connect to a datase in Unreal Engine","name":"SQL Integration for Unreal Engine","description":"Follow this guide to start connecting a MySQL, Oracle, MariaDB, PostgreSQL, Microsoft SQL Server, or SQLITE database to your game in Unreal Engine 5.","image":"https://pandoa.github.io/DatabaseConnector-ODBC/_media/favicon.ico","author":{"@type":"Person","name":"Pandores","url":"https://www.fab.com/sellers/Pandores"},"publisher":{"@type":"Organization","name":"Pandores Marketplace","logo":{"@type":"ImageObject","url":"https://pandoa.github.io/FirebaseFeatures/_media/icon.png"}},"proficiencyLevel":"Beginner","datePublished":"2024-10-15","mainEntityOfPage":"https://pandoa.github.io/DatabaseConnector-ODBC/","dateModified":"2026-05-28T20:42:45.248Z","keywords":["database"," mysql"," mssql"," mariadb"," Unreal Engine"," ue"," ue5"," developer"," plugin"," cpp"," blueprints"," odbc"]}</script>
+	<title>How to setup a datase in Unreal Engine</title>
+	<script type="application/ld+json">{"@context":"https://schema.org/","@type":"TechArticle","headline":"How to setup a datase in Unreal Engine","name":"SQL Integration for Unreal Engine","description":"This guide shows how to start connecting a MySQL, Oracle, MariaDB, PostgreSQL, Microsoft SQL Server, or SQLITE database to your game in Unreal Engine 5 through the ODBC driver.","image":"https://pandoa.github.io/DatabaseConnector-ODBC/_media/favicon.ico","author":{"@type":"Person","name":"Pandores","url":"https://www.fab.com/sellers/Pandores"},"publisher":{"@type":"Organization","name":"Pandores Marketplace","logo":{"@type":"ImageObject","url":"https://pandoa.github.io/FirebaseFeatures/_media/icon.png"}},"proficiencyLevel":"Beginner","datePublished":"2024-10-15","mainEntityOfPage":"https://pandoa.github.io/DatabaseConnector-ODBC/","dateModified":"2026-05-28T20:42:42.280Z","keywords":["database"," mysql"," mssql"," mariadb"," Unreal Engine"," ue"," ue5"," developer"," plugin"," odbc"]}</script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="keywords" content="database, mysql, mssql, mariadb, Unreal Engine, ue, ue5, developer, plugin, cpp, blueprints, odbc">
-	<meta name="description" content="Follow this guide to start connecting a MySQL, Oracle, MariaDB, PostgreSQL, Microsoft SQL Server, or SQLITE database to your game in Unreal Engine 5.">
+	<meta name="keywords" content="database, mysql, mssql, mariadb, Unreal Engine, ue, ue5, developer, plugin, odbc">
+	<meta name="description" content="This guide shows how to start connecting a MySQL, Oracle, MariaDB, PostgreSQL, Microsoft SQL Server, or SQLITE database to your game in Unreal Engine 5 through the ODBC driver.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 	<meta property="og:title" content="SQL Connector for Unreal Engine">
 	<meta property="og:site_name" content="SQL Connector">
@@ -1356,7 +1356,7 @@
 		}
 	</style>
 <style type="text/css">.docsify-pagination-container{display:flex;flex-wrap:wrap;justify-content:space-between;overflow:hidden;margin:5em 0 1em;border-top:1px solid rgba(0,0,0,.07)}.pagination-item{margin-top:2.5em}.pagination-item a,.pagination-item a:hover{text-decoration:none}.pagination-item a{color:currentColor}.pagination-item a:hover .pagination-item-title{text-decoration:underline}.pagination-item:not(:last-child) a .pagination-item-label,.pagination-item:not(:last-child) a .pagination-item-subtitle,.pagination-item:not(:last-child) a .pagination-item-title{opacity:.3;transition:all .2s}.pagination-item:last-child .pagination-item-label,.pagination-item:not(:last-child) a:hover .pagination-item-label{opacity:.6}.pagination-item:not(:last-child) a:hover .pagination-item-title{opacity:1}.pagination-item-label{font-size:.8em}.pagination-item-label>*{line-height:1;vertical-align:middle}.pagination-item-label svg{height:.8em;width:auto;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px}.pagination-item--next{margin-left:auto;text-align:right}.pagination-item--next svg{margin-left:.5em}.pagination-item--previous svg{margin-right:.5em}.pagination-item-title{font-size:1.6em}.pagination-item-subtitle{text-transform:uppercase;opacity:.3}</style></head>
-<body data-page="README.md" class="ready sticky">
+<body data-page="setup.md" class="ready sticky">
 	<script>
 		function copyBlueprintCode(button) {
 			button.innerHTML = "Copied!";
@@ -1414,11 +1414,57 @@
 		}
 		bShowCPP = JSON.parse(getCookie('bShowCPP'));
 	</script>
-	<main><button class="sidebar-toggle" aria-label="Menu"><div class="sidebar-toggle-button"><span></span><span></span><span></span></div></button><aside class="sidebar"><h1 class="app-name"><a class="app-name-link" data-nosearch="" href=".">SQL Connector</a></h1><div class="sidebar-nav"><ul><li><p>Pages</p><ul><li><a href="setup" title="Setup">Setup</a></li><li><a href="code-example" title="Code Example">Code Example</a></li><li><a href="troubleshooting" title="Troubleshooting">Troubleshooting</a></li><li><a href="support" title="Support">Support</a></li></ul></li></ul></div></aside><section class="content"><article class="markdown-section" id="main"><h2 id="sql-connector"><a href=".html#sql-connector" data-id="sql-connector" class="anchor"><span>SQL Connector</span></a></h2><blockquote>
-<p>A database connector for Unreal Engine</p></blockquote>
-<h1 id="introduction"><a href=".html#introduction" data-id="introduction" class="anchor"><span>Introduction</span></a></h1><p><code>SQL Connector</code> allows you to easily connect to and query your database from Blueprints and C++. Check out the <a href="setup">setup guide</a>.</p><h1 id="features"><a href=".html#features" data-id="features" class="anchor"><span>Features</span></a></h1><ul><li>Connect to your database from Unreal Engine</li><li>Efficient pooling system to avoid bottleneck</li><li>Blueprints &amp; C++ support</li><li>Parameters escaping</li><li>Wide database support</li></ul><div class="centered">
-<p><img src="/_images/Frame.png" data-origin="_images/Frame.png" alt="Feature list of the plugin"></p></div>
-<p class="tip">Get started by reading the <a href="setup">setup guide</a>.</p><div class="docsify-pagination-container"></div></article></section></main>
+	<main><button class="sidebar-toggle" aria-label="Menu"><div class="sidebar-toggle-button"><span></span><span></span><span></span></div></button><aside class="sidebar"><h1 class="app-name"><a class="app-name-link" data-nosearch="" href=".">SQL Connector</a></h1><div class="sidebar-nav"><ul><li><p>Pages</p><ul><li class="active"><a href="setup" title="Setup">Setup</a><ul class="app-sub-sidebar"><li><a class="section-link" href="setup.html#_1-downloading-the-plugin" title="1. Downloading the plugin">1. Downloading the plugin</a></li><li><a class="section-link" href="setup.html#_2-installing-the-odbc-driver" title="2. Installing the ODBC driver">2. Installing the ODBC driver</a></li><li><a class="section-link" href="setup.html#_3-getting-the-odbc-driver39s-name" title="3. Getting the ODBC Driver's Name">3. Getting the ODBC Driver's Name</a></li><li><a class="section-link" href="setup.html#_4-c-setup-optional" title="4. C++ Setup (Optional)">4. C++ Setup (Optional)</a></li></ul></li><li><a href="code-example" title="Code Example">Code Example</a></li><li><a href="troubleshooting" title="Troubleshooting">Troubleshooting</a></li><li><a href="support" title="Support">Support</a></li></ul></li></ul></div></aside><section class="content"><article class="markdown-section" id="main"><h1 id="setup"><a href="setup.html#setup" data-id="setup" class="anchor"><span>Setup</span></a></h1><p>This page will guide you on how to setup <code>Database - Connector (ODBC)</code> to connect to your database.</p><hr>
+<h2 id="_1-downloading-the-plugin"><a href="setup.html#_1-downloading-the-plugin" data-id="_1-downloading-the-plugin" class="anchor"><span>1. Downloading the plugin</span></a></h2><p>If it's not already done, download the plugin through Fab <a href="https://www.fab.com/listings/27639dbf-4dcd-4833-bf6f-1aecaa42ca0e" target="_blank" rel="noopener">here</a>.</p><hr>
+<h2 id="_2-installing-the-odbc-driver"><a href="setup.html#_2-installing-the-odbc-driver" data-id="_2-installing-the-odbc-driver" class="anchor"><span>2. Installing the ODBC driver</span></a></h2><p>To connect to your database, <code>Database - Connector (ODBC)</code> uses an ODBC driver specific to your Database.
+That's why you must first install the driver corresponding to your database.</p><p>This table lists the common databases and the download link of their ODBC driver:</p><p class="warn">You can easily find your database's ODBC driver with Google.</p><table>
+<thead>
+<tr>
+<th align="left">Database Name</th>
+<th align="left">ODBC Driver URL</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">MySQL</td>
+<td align="left"><a href="https://dev.mysql.com/downloads/connector/odbc/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/connector/odbc/</a></td>
+</tr>
+<tr>
+<td align="left">MariaDB</td>
+<td align="left"><a href="https://downloads.mariadb.org/connector-odbc/" target="_blank" rel="noopener">https://downloads.mariadb.org/connector-odbc/</a></td>
+</tr>
+<tr>
+<td align="left">PostgreSQL</td>
+<td align="left"><a href="https://www.postgresql.org/download/" target="_blank" rel="noopener">https://www.postgresql.org/download/</a></td>
+</tr>
+<tr>
+<td align="left">MSSQL</td>
+<td align="left"><a href="https://go.microsoft.com/fwlink/?linkid=2153471" target="_blank" rel="noopener">https://go.microsoft.com/fwlink/?linkid=2153471</a></td>
+</tr>
+<tr>
+<td align="left">Oracle</td>
+<td align="left"><a href="https://www.oracle.com/database/technologies/releasenote-odbc-ic.html" target="_blank" rel="noopener">https://www.oracle.com/database/technologies/releasenote-odbc-ic.html</a></td>
+</tr>
+</tbody></table>
+<p class="tip">Make sure to pick the 64-bits driver.</p><hr>
+<h2 id="_3-getting-the-odbc-driver39s-name"><a href="setup.html#_3-getting-the-odbc-driver39s-name" data-id="_3-getting-the-odbc-driver39s-name" class="anchor"><span>3. Getting the ODBC Driver's Name</span></a></h2><p>Now that the driver is installed on your machine, you need to get the exact driver's name.
+To do so:</p><ol><li>Use the <code>WIN + R</code> shortcut to open the <code>Run</code> window.</li><li>Enter <code>odbcad32.exe</code> to open the <code>ODBC Data Source Administrator (64-bit)</code> window. </li></ol><div class="centered">
+<p><img src="/_media/run.png" data-origin="_media/run.png" alt="64-bit ODBC admin window"> </p></div>
+<ol start="3"><li>Under the <code>Drivers</code> section, identify the driver you installed and note somewhere the exact name of your driver (version number included). </li></ol><div class="centered">
+<p><img src="/_media/driver.png" data-origin="_media/driver.png" alt="driver name"></p></div>
+<p class="warn">In the example, the name to remember is <code>MariaDB ODBC 3.1 Driver</code>.</p><ol start="4"><li>You now have to use this name when connecting to your Database using Blueprints and/or C++.</li></ol><p class="tip">If the driver corresponding to your database doesn't show up, it probably means that the 64-bits version isn't installed on your machine.</p><hr>
+<h2 id="_4-c-setup-optional"><a href="setup.html#_4-c-setup-optional" data-id="_4-c-setup-optional" class="anchor"><span>4. C++ Setup (Optional)</span></a></h2><p>An additional step is required for C++, you can skip it if you use only Blueprints:</p><ol><li>Open your module's <code>Module.Build.cs</code>.</li><li>Add the following line in the constructor:<pre v-pre="" data-lang="csharp"><code class="lang-csharp">PublicDependencyModuleNames<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token string">"DatabaseConnector"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></li><li>Save the file.</li><li>Right click on your <code>Project.uproject</code>.</li><li>Select <code>Generate &lt;IDE&gt; Project Files</code>.</li></ol><p>The plugin is now ready to be used with C++.</p><div class="docsify-pagination-container">
+        <div class="pagination-item pagination-item--next">
+          <a href="code-example">
+            <div class="pagination-item-label">
+              <span>NEXT</span>
+              <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                <polyline fill="none" vector-effect="non-scaling-stroke" points="2,2 8,8 2,14"></polyline>
+              </svg>
+            </div>
+            <div class="pagination-item-title">Code Example</div>
+      <div class="pagination-item-subtitle">Pages</div></a>
+        </div>
+      </div></article></section></main>
 	
 	<script>
 function setupStatic() {

@@ -1,0 +1,64 @@
+{
+  "root_url": "http://localhost:3000",
+  "target_url": "https://pandoa.github.io/DatabaseConnector-ODBC",
+  "out_dir": "docs/",
+  "src_dir": "src/",
+  "load_timeout": 20000,
+  "title_append": " | DatabaseConnector ODBC",
+  "remove_selectors": [
+    ".delete-static",
+    "script[src*=\"livereload.js\"]",
+    "iframe[allow=\"join-ad-interest-group\"]"
+  ],
+  "string_replaces": [
+    [
+      "href=\"/\"",
+      "href=\".\""
+    ],
+    [
+      "?id=",
+      ".html#"
+    ],
+    [
+      "js.html#",
+      "js.html?id="
+    ]
+  ],
+  "pages": {
+    "index": {
+      "title": "How to connect to a datase in Unreal Engine",
+      "description": "Follow this guide to start connecting a MySQL, Oracle, MariaDB, PostgreSQL, Microsoft SQL Server, or SQLITE database to your game in Unreal Engine 5.",
+      "keywords": "database, mysql, mssql, mariadb, Unreal Engine, ue, ue5, developer, plugin, cpp, blueprints, odbc",
+      "priority": 1,
+      "in_sitemap": true
+    },
+    "setup": {
+      "title": "How to setup a datase in Unreal Engine",
+      "description": "This guide shows how to start connecting a MySQL, Oracle, MariaDB, PostgreSQL, Microsoft SQL Server, or SQLITE database to your game in Unreal Engine 5 through the ODBC driver.",
+      "keywords": "database, mysql, mssql, mariadb, Unreal Engine, ue, ue5, developer, plugin, odbc",
+      "priority": 1,
+      "in_sitemap": true
+    },
+    "code-example": {
+      "title": "How to implement database connection in Unreal Engine",
+      "description": "This guide shows how to connect to a MySQL, Oracle, MariaDB, PostgreSQL, Microsoft SQL Server, or SQLITE database to your game in Unreal Engine 5 through the ODBC driver in Blueprints or in C++.",
+      "keywords": "database, mysql, mssql, mariadb, Unreal Engine, ue, ue5, developer, plugin, cpp, blueprints, odbc",
+      "priority": 1,
+      "in_sitemap": true
+    },
+    "troubleshooting": {
+      "title": "How to debug a database connection in Unreal Engine",
+      "description": "This guide shows how to debug an error from a connection to a MySQL, Oracle, MariaDB, PostgreSQL, Microsoft SQL Server, or SQLITE database to your game in Unreal Engine 5 through the ODBC driver in Blueprints or in C++.",
+      "keywords": "database, mysql, mssql, mariadb, Unreal Engine, ue, ue5, developer, plugin, cpp, blueprints, odbc, error",
+      "priority": 1,
+      "in_sitemap": true
+    },
+    "support": {
+      "title": "How to get help setting up a database connection in Unreal Engine",
+      "description": "This guide shows how to get help when setting up a connection to a MySQL, Oracle, MariaDB, PostgreSQL, Microsoft SQL Server, or SQLITE database to your game in Unreal Engine 5 through the ODBC driver in Blueprints or in C++.",
+      "keywords": "database, mysql, mssql, mariadb, Unreal Engine, ue, ue5, developer, plugin, cpp, blueprints, odbc, error, help",
+      "priority": 1,
+      "in_sitemap": true
+    }
+  }
+}

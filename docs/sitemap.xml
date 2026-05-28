@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- [[autogen]] -->
+  <url>
+    <loc>https://pandoa.github.io/DatabaseConnector-ODBCcode-example</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/DatabaseConnector-ODBCsetup</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/DatabaseConnector-ODBCsupport</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/DatabaseConnector-ODBCtroubleshooting</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/DatabaseConnector-ODBCindex</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>
