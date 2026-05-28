@@ -1,6 +1,6 @@
 {
   "root_url": "http://localhost:3000",
-  "target_url": "https://pandoa.github.io/DatabaseConnector-ODBC",
+  "target_url": "https://pandoa.github.io/DatabaseConnector-ODBC/",
   "out_dir": "docs/",
   "src_dir": "src/",
   "load_timeout": 20000,

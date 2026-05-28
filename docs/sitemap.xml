@@ -4,27 +4,27 @@
  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- [[autogen]] -->
   <url>
-    <loc>https://pandoa.github.io/DatabaseConnector-ODBCcode-example</loc>
+    <loc>https://pandoa.github.io/DatabaseConnector-ODBC/code-example</loc>
     <priority>1</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://pandoa.github.io/DatabaseConnector-ODBCsetup</loc>
+    <loc>https://pandoa.github.io/DatabaseConnector-ODBC/setup</loc>
     <priority>1</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://pandoa.github.io/DatabaseConnector-ODBCsupport</loc>
+    <loc>https://pandoa.github.io/DatabaseConnector-ODBC/support</loc>
     <priority>1</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://pandoa.github.io/DatabaseConnector-ODBCtroubleshooting</loc>
+    <loc>https://pandoa.github.io/DatabaseConnector-ODBC/troubleshooting</loc>
     <priority>1</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://pandoa.github.io/DatabaseConnector-ODBCindex</loc>
+    <loc>https://pandoa.github.io/DatabaseConnector-ODBC/</loc>
     <priority>1</priority>
     <changefreq>weekly</changefreq>
   </url>
